@@ -2,7 +2,7 @@
 
 <!-- Headings -->
 
-## ==Markdown Syntax Examples==
+## Markdown Syntax Examples
 
 # Heading1
 
