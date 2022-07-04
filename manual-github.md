@@ -1,6 +1,6 @@
 <h5>Update: 3. July. 2022</h5>
 
-## ==GitHub Command Examples==
+## GitHub Command Examples
 
 #### 1. Tools
 
@@ -14,7 +14,7 @@
 
 ##### " On MINGW64 Terminal in Windows "
 
--   `git config --list` open global configuration file at ==_c:/Users/your-account-id/.gitconfig_==
+-   `git config --list` open global configuration file at _c:/Users/your-account-id/.gitconfig_
 -   `git config --global -e` open global configuration file on editing mode
 -   `code .` open visual studio code editor
 -   `git config --global core.editor "code"`
