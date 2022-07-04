@@ -1,6 +1,8 @@
 <h5>Update: 2. July. 2022</h5>
 
-<!-- Headings -->
+<!-- Followed git hub favorate markdown -->
+
+<!-- Headings. -->
 
 ## Markdown Syntax Examples
 
@@ -111,11 +113,11 @@ I need to highlight these ==very important words==.
 
 <!--Subscript -->
 
-H~2~0 : subscript
+H<sub>2</sub>0 : subscript
 
 <!--Superscript -->
 
-x^2^ : superscript
+x<sup>2</sup> : superscript
 
 A & B
 &alpha;
