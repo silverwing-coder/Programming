@@ -1,4 +1,4 @@
-<h5>Update: 2. July. 2022</h5>
+##### _Update: 2-July-2022_
 
 <!-- Followed git hub favorate markdown -->
 
@@ -42,7 +42,7 @@ Click [here](https://carolinau.edu)
 <!-- Image -->
 <img src= "https://i.pinimg.com/originals/3f/96/16/3f9616b9dde12992d254aa30613939da.jpg" width = 200>
 
-![image descroption](https://i.pinimg.com/originals/3f/96/16/3f9616b9dde12992d254aa30613939da.jpg)
+![image description](https://i.pinimg.com/originals/3f/96/16/3f9616b9dde12992d254aa30613939da.jpg)
 
 ---
 
