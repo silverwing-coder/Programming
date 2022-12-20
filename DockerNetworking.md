@@ -1,5 +1,5 @@
 <h6>ver. Dec. 2022</h6>
-<h2> Docker Networing on Ubuntu</h2>
+<h2> Docker Networking on Ubuntu</h2>
 
 1. VirtualBox Setup
 
