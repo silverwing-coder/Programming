@@ -1,7 +1,7 @@
 <h6>ver. Dec. 2022</h6>
 <h2> Docker Container Management</h2>
 
-1. Docker container installation: Kali-linux or Ubuntu on VirtualBox
+1. Docker container installation: Kali-Linux or Ubuntu on VirtualBox
 
     - Refer to [docker installation guide](https://docs.docker.com/get-docker/)
 
@@ -26,7 +26,7 @@
 3. Docker container vs. IMAGE
     - Container is a virtual system which is running environment for an IMAGE
     - Container is port bounded to talk to applicatiohn running inside of container
-    - Application image: postres, redis, mongo, etc.
+    - Application image: postgres, redis, mongo, etc.
     - Images can be pulled from [docker hub](https://hub.docker.com/)
 
 ---
@@ -68,8 +68,8 @@ sudo docker ps -a
 
 # bind host and container ports:
 # - multiple containers run on a host machine
-# - host machine has only ceratin number of ports available
-# - confilict occur when same port on host machine is assigned
+# - host machine has only certain number of ports available
+# - conflict occur when same port on host machine is assigned
 # - bind a host port number and container port number: "host-port#:container-port#"
 sudo docker run -d -p6001:6379 redis:4.0
 sudo docker run -d -p6000:6379 redis
