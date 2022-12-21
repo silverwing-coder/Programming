@@ -110,7 +110,7 @@ sudo docker images --filter "since=ubuntu"
 sudo docker images --format "{{.Repository}} has the following {{.ID}}"
 sudo docker images --quiet
 
-### Docker Exec command
+## Docker Exec command
 # sudo docker exec <options> <container> <command>
 sudo docker ps
 sudo docker exec 4859xxxxxxxx ls
@@ -131,20 +131,20 @@ sudo docker exec -u 0 juice-shop whoami
 sudo docker exec juice-shop sh -c "ls ; cat server.js"
 # docker exec in a specific directory"
 sudo docker exec -w /juice-shop/logs juice-shop cat access.log.2022-12-20
-## nothing logged yet
+# nothing logged yet
 
-### docker run vs. docker exec
-## docker run: creates a temporary container and execute the command
+## docker run vs. docker exec
+# docker run: creates a temporary container and execute the command
 docker run -it ubuntu:18.4 sh
 > exit
-## docker exec: executes a command on a running container
+# docker exec: executes a command on a running container
 docker exec -it juice-shop sh
 > exit
 
 ```
 
 ```sh
-### docker logs
+## docker logs
 # docker daemon logs:   debian distributions - /var/log/daemon.log
 #                       windows OS - AppData/Local
 
