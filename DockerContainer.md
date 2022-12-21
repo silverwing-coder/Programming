@@ -1,16 +1,102 @@
 <h6>ver. Dec. 2022</h6>
 <h2> Docker Container Management</h2>
 
-1. Lab environment: Kali-Linux or Ubuntu on VirtualBox
-2. This page introduces
-    - How to create docker container and images
-    - How to manage docker container(s)
+1. Docker container installation: Kali-linux or Ubuntu on VirtualBox
+
+    - Refer to [docker installation guide](https://docs.docker.com/get-docker/)
+
+    ```sh
+    # uninstall old versions
+    sudo apt remove docker docker-engine docker.io
+
+    # install docker community edition: Ubuntu
+    sudo apt install docker.io -y
+    sudo docker images
+
+    ```
+
+2. Docker commands
+    - sudo docker pull
+    - sudo docker run
+    - sudo docker start
+    - sudo docker stop
+    - sudo docker ps
+    - sudo docker exec -it
+    - sudo docker logs
+3. Docker container vs. IMAGE
+    - Container is a virtual system which is running environment for an IMAGE
+    - Container is port bounded to talk to applicatiohn running inside of container
+    - Application image: postres, redis, mongo, etc.
+    - Images can be pulled from [docker hub](https://hub.docker.com/)
 
 ---
 
 ```sh
 
-### list docker images
+## docker commands
+# sudo docker pull
+# sudo docker run
+# sudo docker start
+# sudo docker stop
+# sudo docker ps
+# sudo docker exec -it
+# sudo docker logs
+
+## pull image
+sudo docker pull redis
+sudo docker images
+
+## docker run = docker pull + docker start
+sudo docker run redis:4.0
+
+## docker run
+sudo docker run redis   # ^C to stop a container
+sudo docker ps
+
+# run on detached mode
+sudo docker run -d redis
+sudo docker ps
+
+# restart of a container
+sudo docker stop container-id
+sudo docker ps
+sudo docker start container-id
+sudo docker ps
+
+# display history of all containers: list of running and stopped containers
+sudo docker ps -a
+
+# bind host and container ports:
+# - multiple containers run on a host machine
+# - host machine has only ceratin number of ports available
+# - confilict occur when same port on host machine is assigned
+# - bind a host port number and container port number: "host-port#:container-port#"
+sudo docker run -d -p6001:6379 redis:4.0
+sudo docker run -d -p6000:6379 redis
+sudo docker ps
+
+# debugging containers
+sudo docker ps
+sudo docker logs container-id # or
+sudo docker logs container-name
+
+# specify container name
+sudo docker run -d -p6001:6379 --name redis-old redis:4.0
+sudo docker run -d -p6000:6379 --name redis-latest redis
+sudo docker ps
+
+# execute interactive commands in a container: only limited commands can be used (a light-weight OS installed)
+sudo docker exec -it redis-old /bin/bash
+> ls
+> cd /
+> ls
+> pwd
+> env
+> exit
+sudo docker ps
+
+
+## list docker images
 sudo docker images # or
 sudo docker image ls
 
