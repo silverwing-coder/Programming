@@ -57,6 +57,8 @@ Click [here](https://carolinau.edu)
 
 ---
 
+<!-- Fenced Code Block-->
+
 <!-- Code -->
 
 To print message int hte console, use `console.log('your message')` and ....
@@ -68,10 +70,6 @@ System.out.println("Hello World");
 ```js
 console.log("Hello World");
 ```
-
----
-
-<!-- Fenced Code Block-->
 
 ```py
 {
