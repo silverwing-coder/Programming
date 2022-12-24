@@ -26,7 +26,7 @@ vncserver -kill :1
 
 ```
 
-<h5><em>If gray screen appears revise "~/.vnc/xstartup"</em></h5>
+<h5><em>If gray screen appears, then revise "~/.vnc/xstartup"</em></h5>
 
 ```sh
 #!/bin/sh
