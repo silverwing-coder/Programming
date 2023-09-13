@@ -3,6 +3,7 @@
 ## GitHub Basic
 
 <br/>
+
 #### 1. Tools
 
 1. **Gitbash** _= MINGW64 Terminal_ : Git default console
@@ -11,6 +12,7 @@
     - Use **Git Bash** terminal (_CTL + ` to open terminal -> select Git Bash_)
 
 <br/>
+
 #### 2. git shell commands
 
 : Refer to [git documents](https://git-scm.com/docs)
