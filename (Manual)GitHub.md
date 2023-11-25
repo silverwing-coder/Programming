@@ -1,4 +1,4 @@
-##### _Update: 6-July-2022_
+##### Update: July-2022
 
 ## GitHub Basic
 
@@ -186,6 +186,7 @@
 -   `git branch -d confilict2`
 
 <br/>
+
 #### 3. GitHub
 
 ##### 3-1. GitHub account management
